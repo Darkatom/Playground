@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ES6 Classes</title>
+	
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+
+	<script src="./canvanoid.js"></script>
+	<script src="./utils.js"></script>
+</head>
+<body>
+	<canvas id="canvas" width=700 height=700></canvas>
+	<script>
+		
+		const w = window;
+		requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || 
+								w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
+		
+		var then = Date.now();
+		reset();
+		main();
+	</script>
+</body>
+</html>
